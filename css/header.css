@@ -1,0 +1,95 @@
+/* general web utilities */
+* {
+    padding: 0;
+    margin: 0;
+}
+  
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+  
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    user-select: none;
+}
+  
+
+/* title elements */
+
+:root {
+    font-size: 10px;
+}
+
+#webTitle, #webTitle a:link, #webTitle a:visited, #hamburgerTopBar, #hamburgerBottomBar, #aboutNav:hover{
+    transition: all 0.2s ease-in-out;
+}
+
+.topNavBar {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 5em;
+    padding: 10em 6vw 5em;
+    z-index: 999;
+}
+
+.navType {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 0.5em;
+}
+
+#webTitle, #webTitle a:link, #webTitle a:visited, .siteHeader nav li, .siteHeader nav li a:link, .siteHeader nav li a:visited{
+    color: black;
+    text-decoration: none;
+    user-select: none;
+    font-family: 'forma-djr-display', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    position: relative;
+    transition: color 0.25s ease-in;
+    font-size: 1.75rem;
+}
+
+#animatedWord {
+    font-family: 'loretta', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.siteHeader nav li a:hover {
+    color: rgb(94, 94, 94);
+    cursor: pointer;
+}
+
+
+
+/* nav elements */
+.siteHeader ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#bookshelfSelect {
+    padding-right: 4vw;
+}
+
+.dividerLine {
+    height: 2px;
+    width: 100vw;
+    background-color: black;
+}
+
+
