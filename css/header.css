@@ -26,6 +26,10 @@ body {
 
 :root {
     font-size: 10px;
+    --grey: #cacaca;
+    --black: #2A2A2A;
+    --pink: #ffcfdc;
+    --letterSpacing: 0.10rem;
 }
 
 #webTitle, #webTitle a:link, #webTitle a:visited, #hamburgerTopBar, #hamburgerBottomBar, #aboutNav:hover{
@@ -51,15 +55,16 @@ body {
 }
 
 #webTitle, #webTitle a:link, #webTitle a:visited, .siteHeader nav li, .siteHeader nav li a:link, .siteHeader nav li a:visited{
-    color: black;
+    color: var(--black);
     text-decoration: none;
     user-select: none;
     font-family: 'forma-djr-display', sans-serif;
     font-weight: 600;
     font-style: normal;
     position: relative;
-    transition: color 0.25s ease-in;
+    /* transition: color 0.25s ease-in; */
     font-size: 1.75rem;
+    letter-spacing: var(--letterSpacing);
 }
 
 #animatedWord {
@@ -69,11 +74,9 @@ body {
 }
 
 .siteHeader nav li a:hover {
-    color: rgb(94, 94, 94);
+    color: var(--grey);
     cursor: pointer;
 }
-
-
 
 /* nav elements */
 .siteHeader ul {
@@ -87,9 +90,9 @@ body {
 }
 
 .dividerLine {
-    height: 2px;
+    height: 1.5px;
     width: 100vw;
-    background-color: black;
+    background-color: var(--black);
 }
 
 
