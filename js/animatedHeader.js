@@ -86,7 +86,7 @@
                     'voter guides', 'ballots', 'candidate statements',
                     'political flyers', 'campaign promises', 'election results',
                     'poll numbers', 'exit surveys',
-                    'code reviews', 'bug reports', 'book reviews'
+                    'code reviews', 'bug reports', 'book reviews', 'lots and lots of books'
                 ];
                 
                 const animatedElement = document.getElementById('animatedWord');
