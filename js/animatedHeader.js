@@ -119,7 +119,7 @@
                     
                     initialTimeout = setTimeout(() => {
                         updateWord(); // Then change to random word after a brief moment
-                        animationInterval = setInterval(updateWord, 500); // Continue every 0.5 seconds
+                        animationInterval = setInterval(updateWord, 700); // Continue every 0.5 seconds
                     }, 750); // Wait 750ms before starting the cycling
                 }
                 

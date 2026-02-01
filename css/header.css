@@ -1,4 +1,11 @@
 /* general web utilities */
+:root {
+    font-size: 10px;
+    --white: #ffffff;
+    --grey: #9c9c9c;
+    --background: #202020;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -19,80 +26,43 @@ body {
     padding: 0;
     overflow-x: hidden;
     user-select: none;
+    background-color: var(--background);
 }
   
 
 /* title elements */
 
-:root {
-    font-size: 10px;
-    --grey: #cacaca;
-    --black: #2A2A2A;
-    --pink: #ffcfdc;
-    --letterSpacing: 0.10rem;
-}
-
-#webTitle, #webTitle a:link, #webTitle a:visited, #hamburgerTopBar, #hamburgerBottomBar, #aboutNav:hover{
-    transition: all 0.2s ease-in-out;
-}
-
-.topNavBar {
-    position: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 5em;
-    padding: 10em 6vw 5em;
-    z-index: 999;
-}
-
 .navType {
+    position: fixed;
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
     padding-bottom: 0.5em;
+    width: 100vw;
+    height: 5em;
+    padding: 6em 6vw 5em;
+    z-index: 999;
 }
 
-#webTitle, #webTitle a:link, #webTitle a:visited, .siteHeader nav li, .siteHeader nav li a:link, .siteHeader nav li a:visited{
-    color: var(--black);
+#webTitle, #webTitle a:link, #webTitle a:visited {
+    color: var(--white);
     text-decoration: none;
     user-select: none;
-    font-family: 'forma-djr-display', sans-serif;
-    font-weight: 600;
+    font-family: 'loretta', sans-serif;
+    font-weight: 300;
     font-style: normal;
-    position: relative;
-    /* transition: color 0.25s ease-in; */
     font-size: 1.75rem;
-    letter-spacing: var(--letterSpacing);
+    transition: color 0s linear;
+}
+
+#webTitle a:hover {
+    color: var(--grey);
+    transition: color 0.6s ease-in;
 }
 
 #animatedWord {
     font-family: 'loretta', sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     font-style: italic;
 }
-
-.siteHeader nav li a:hover {
-    color: var(--grey);
-    cursor: pointer;
-}
-
-/* nav elements */
-.siteHeader ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-}
-
-#bookshelfSelect {
-    padding-right: 4vw;
-}
-
-.dividerLine {
-    height: 1.5px;
-    width: 100vw;
-    background-color: var(--black);
-}
-
-
