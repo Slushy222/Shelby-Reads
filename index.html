@@ -21,12 +21,43 @@
 
     <body>
         <header class="siteHeader">
-            <div class="navType">
-                <h1 id="webTitle"><a id="titleHover" href="index.html">shelby reads</a><span id="animatedWord"></span></h1>
-            </div>
-            <div class="sideNav"> 
-                <div id="bookLogo"><img src="images/icons/Books.svg" alt="a stack of three books"></div>
-                <div id="personIcon"><img src="images/icons/person.svg" alt="an icon of a person"></div>
+            <div class="navWrapper"> 
+                <div class="navType">
+                    <h1 id="webTitle"><a id="titleHover" href="index.html">shelby reads</a><span id="animatedWord"></span></h1>
+                </div>
+                <div class="sideNav">
+                    <div class="icon">
+                        <a href="#">
+                            <svg id="bookIcon" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.41 17">
+                                <defs>
+                                    <style>
+                                        .color {
+                                            fill: white;
+                                        }
+                                    </style>
+                                </defs>
+                                <rect class="cls-1" y="6.91" width="4.25" height="10.1"/>
+                                <rect class="cls-1" x="6.38" width="4.25" height="17"/>
+                                <rect class="cls-1" x="13.39" y="2.95" width="4.25" height="13.82" transform="translate(-2.73 7.64) rotate(-25.5)"/>
+                            </svg>
+                        </a>    
+                    </div>
+                    <div class="icon">
+                        <a href="#">
+                            <svg id="personIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.42 13.75">
+                                <defs>
+                                    <style>
+                                        .color {
+                                            fill: white;
+                                        }
+                                    </style>
+                                </defs>
+                                <path class="cls-1" d="M12.42,13.75h-1.75v-2.21c0-.48-.19-.93-.53-1.27-.33-.33-.79-.53-1.27-.53H3.54c-.47,0-.93.19-1.27.53-.34.34-.52.79-.52,1.27v2.21H0v-2.21c0-.95.37-1.84,1.04-2.5s1.56-1.04,2.5-1.04h5.33c.93,0,1.84.38,2.5,1.04.67.67,1.04,1.56,1.04,2.5v2.21Z"/>
+                                <path class="cls-1" d="M6.21,7.08c-1.95,0-3.54-1.59-3.54-3.54S4.25,0,6.21,0s3.54,1.59,3.54,3.54-1.59,3.54-3.54,3.54ZM6.21,1.75c-.99,0-1.79.8-1.79,1.79s.8,1.79,1.79,1.79,1.79-.8,1.79-1.79-.8-1.79-1.79-1.79Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
             <script src="./js/animatedHeader.js"></script>
         </header>

@@ -4,6 +4,7 @@
     --white: #ffffff;
     --grey: #9c9c9c;
     --background: #202020;
+    --s_padding: 6em;
 }
 
 * {
@@ -27,23 +28,11 @@ body {
     overflow-x: hidden;
     user-select: none;
     background-color: var(--background);
+    height: 200vh;
 }
   
 
 /* title elements */
-
-.navType {
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    padding-bottom: 0.5em;
-    width: 100vw;
-    height: 5em;
-    padding: 6em 6vw 5em;
-    z-index: 999;
-}
 
 #webTitle, #webTitle a:link, #webTitle a:visited {
     color: var(--white);
@@ -58,11 +47,67 @@ body {
 
 #webTitle a:hover {
     color: var(--grey);
-    transition: color 0.6s ease-in;
+    transition: color 0.3s ease-in;
 }
 
 #animatedWord {
     font-family: 'loretta', sans-serif;
     font-weight: 300;
     font-style: italic;
+}
+
+
+/* side nav */
+
+.navWrapper {
+    width: auto;
+    display: flex;
+    padding: var(--s_padding);
+    z-index: 999;
+}
+
+.sideNav {
+    display: flex;
+    position: fixed;
+    align-items: left;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    z-index: 999;
+}
+
+.navType {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    padding-left: var(--s_padding);
+    z-index: 998;
+}
+
+#bookIcon {
+    height: auto;
+    margin-top: 2px;
+    width: 20px;
+    fill: var(--white);
+    transition: fill 0s linear;
+}
+
+#bookIcon:hover {
+    fill: var(--grey);
+    transition: fill 0.3s ease-in;
+}
+
+#personIcon {
+    height: auto;
+    width: 15px;
+    fill: var(--grey);
+    transition: fill 0s linear;
+}
+
+#personIcon:hover {
+    fill: var(--white);
+    transition: fill 0.3s ease-in;
 }

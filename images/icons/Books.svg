@@ -1,5 +1,13 @@
-<svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect y="6.9082" width="4.2512" height="10.0966" fill="white"/>
-<rect x="6.37695" width="4.2512" height="17.0048" fill="white"/>
-<rect x="10.6279" y="4.53369" width="4.2512" height="13.8164" transform="rotate(-25.4952 10.6279 4.53369)" fill="white"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.41 17">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" y="6.91" width="4.25" height="10.1"/>
+  <rect class="cls-1" x="6.38" width="4.25" height="17"/>
+  <rect class="cls-1" x="13.39" y="2.95" width="4.25" height="13.82" transform="translate(-2.73 7.64) rotate(-25.5)"/>
 </svg>
