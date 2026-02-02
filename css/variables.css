@@ -1,0 +1,14 @@
+:root {
+    font-size: 10px;
+    --white: #ffffff;
+    --grey: #9c9c9c;
+    --background: #202020;
+
+    /* padding below */
+    --s_padding: 6em;
+    --m_padding: 12em;
+
+    /* type below */
+    --s_type: 1.75rem;
+    --large_para: 3.5rem;
+}

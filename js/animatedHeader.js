@@ -1,4 +1,4 @@
- function initAnimatedText() {
+function initAnimatedText() {
     const words = [
                     'books', 'literature', 'non-fiction', 'smut', 'romantasy', 
                     'the back of a cereal box', 'car manuals', 'history', 
@@ -107,33 +107,33 @@
                 
                 function updateWord() {
                     currentIndex = getRandomIndex();
-                    animatedElement.textContent = ' ' + words[currentIndex]; // Add space before word
+                    animatedElement.textContent = ' ' + words[currentIndex];
                     lastIndex = currentIndex;
                 }
                 
                 function startAnimation() {
-                    if (isAnimating) return; // Prevent multiple animations
+                    if (isAnimating) return;
                     
                     isAnimating = true;
-                    animatedElement.textContent = ' books'; // Always show "books" first on hover
+                    document.body.classList.add('blur-background'); // Add blur class
+                    animatedElement.textContent = ' books';
                     
                     initialTimeout = setTimeout(() => {
-                        updateWord(); // Then change to random word after a brief moment
-                        animationInterval = setInterval(updateWord, 700); // Continue every 0.5 seconds
-                    }, 750); // Wait 750ms before starting the cycling
+                        updateWord();
+                        animationInterval = setInterval(updateWord, 700);
+                    }, 750);
                 }
                 
                 function stopAnimation() {
                     isAnimating = false;
+                    document.body.classList.remove('blur-background'); // Remove blur class
                     clearInterval(animationInterval);
                     clearTimeout(initialTimeout);
-                    animatedElement.textContent = ''; // Hide the word completely
+                    animatedElement.textContent = '';
                 }
                 
-                // Add hover event listeners
                 titleElement.addEventListener('mouseenter', startAnimation);
                 titleElement.addEventListener('mouseleave', stopAnimation);
             }
             
-            // Initialize when page loads
             document.addEventListener('DOMContentLoaded', initAnimatedText);
