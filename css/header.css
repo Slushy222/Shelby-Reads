@@ -108,7 +108,7 @@ body.blur-background::before {
 }
 
 #personIcon, #leftArrowIcon {
-    width: 15px;
+    width: 17px;
     transition: fill 0s linear;
 }
 
@@ -122,6 +122,7 @@ body.blur-background::before {
 
 #bookButtonContainer {
     height: auto;
+    cursor: pointer;
 }
 
 .bookButton {
@@ -130,7 +131,7 @@ body.blur-background::before {
     width: 16px;
     height: 2px;
     cursor: pointer;
-    margin-top: 1.2em;
+    margin-top: 1.3em;
     transition: fill 0s linear;
 }
 
