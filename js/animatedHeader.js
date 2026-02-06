@@ -24,7 +24,7 @@ function initAnimatedText() {
                     'stories that keep her up all night', 'fairy tales', 'folk tales',
                     'urban legends', 'conspiracy theories', 'fan fiction',
                     'academic papers', 'research studies', 'weather reports',
-                    'nutritional facts',
+                    'nutritional facts','taylor\'s code',
                     'terms of service',
                     'error messages', 'spam emails',
                     'ancient scrolls', 'hieroglyphics', 
