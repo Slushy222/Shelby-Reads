@@ -21,6 +21,6 @@ body {
     overflow-x: hidden;
     user-select: none;
     background-color: var(--background);
-    height: 200vh;
+    height: auto;
     scroll-behavior: smooth;
 }
