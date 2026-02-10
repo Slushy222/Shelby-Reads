@@ -1,0 +1,16 @@
+@keyframes spineLoad {
+  0% {
+    transform: translateY(275%);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+
+.spine {
+    animation-delay: calc(500ms * var(--i));
+    animation: spineLoad 1.3s;
+}

@@ -9,6 +9,9 @@
     --s_padding: 6em;
     --m_padding: 12em;
 
+    /* book styles */
+    --bookSpacing: 0.75em;
+
     /* type below */
     --s_type: 1.75rem;
     --large_para: 3.5rem;
