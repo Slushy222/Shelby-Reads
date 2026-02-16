@@ -1,0 +1,21 @@
+/* add an id to any new spine div and reference its background color here to change its color 
+make sure you choose a color that has good contrast with the white type that sits on top of it!!!!!!
+keep heights in 'em' & width in percentages, helps with screen responsiveness*/
+
+#bookOne {
+    background-color: blue;
+    height: 5em;
+    width: 50%;
+}
+
+#bookTwo {
+    background-color: blue;
+    height:5em;
+    width: 70%;
+}
+
+#bookThree {
+    background-color: blue;
+    height: 5em;
+    width: 50%;
+}

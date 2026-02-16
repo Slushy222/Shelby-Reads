@@ -7,7 +7,7 @@
     font-family: 'loretta', serif;
     font-weight: 300;
     font-style: normal;
-    font-size: var(--s_type);
+    font-size: var(--ui_type);
     transition: color 0s linear;
 }
 
@@ -60,6 +60,7 @@ body.blur-background::before {
     justify-content: space-between;
     height: 90vh;
     z-index: 999;
+    mix-blend-mode: difference;
 }
 
 .navType {

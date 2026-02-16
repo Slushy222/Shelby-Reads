@@ -17,6 +17,7 @@
     padding: var(--s_padding);
     padding-bottom: var(--m_padding);
     user-select: text;
+    text-wrap: balance;
 }
 
 .overline, .intro {
@@ -27,7 +28,7 @@
 .overline {
     font-family: 'Rethink Sans', sans-serif;
     font-weight: 400;
-    font-size: var(--s_type);
+    font-size: var(--ui_type);
     padding-bottom: 0.5em;
 }
 
@@ -49,12 +50,13 @@
 }
 
 .spine {
-    background-color: blue;
-    height: 5em;
-    width: 50%;
     border-radius: 5px;
     margin: var(--bookSpacing) 0px;
     transition: all 0.4s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: var(--s_padding);
 }
 
 #topBook {
@@ -65,19 +67,21 @@
     cursor: pointer;
     margin: 1.2em 0px;
     scale: 1.05;
-    /* animation: spineHover 0.3s ease forwards; */
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
-/* #topBook:hover {
-    animation: topSpineHover;
-    animation-duration: 0.3s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-} */
 
+/* spine type below */
 
-/* @keyframes topSpineHover {
-    0% {margin-bottom:  var(--bookSpacing) 0px;}
-    100% {margin-bottom: 4em 0px;}
-} */
+.spineTitle, .spineAuthor {
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 400;
+    font-size: var(--ui_type);
+    font-style: normal;
+    color: var(--white);
+    display: inherit;
+}
+
+.spineTitle {
+    font-weight: 600;
+    margin-right: var(--bookTypeSpacing);
+}

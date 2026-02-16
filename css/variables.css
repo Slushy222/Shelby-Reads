@@ -1,9 +1,13 @@
 :root {
     font-size: 10px;
     --white: #ffffff;
+    --black: #000000;
     --grey: #9c9c9c;
     --background: #202020;
-    --footerBackground: #ffecd6;
+    --footerBackground: #fff5ea;
+
+    /* paragraph spacing */
+    --paraSpacing: 1em;
 
     /* padding below */
     --s_padding: 6em;
@@ -11,8 +15,10 @@
 
     /* book styles */
     --bookSpacing: 0.75em;
+    --bookTypeSpacing: 1.5em;
 
     /* type below */
-    --s_type: 1.75rem;
+    --ui_type: 1.5rem;
     --large_para: 3.5rem;
+    --small_para: 1.5rem
 }
