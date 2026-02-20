@@ -3,7 +3,11 @@
     width: 100vw;
     background-color: var(--footerBackground);
     display: flex;
+    position: sticky;
+    z-index: 1;
     align-items: center;
+    bottom: 0;
+    left: 0;
 }
 
 #aboutWrapper {
@@ -40,4 +44,5 @@
     display: inherit;
     margin-bottom: var(--paraSpacing);
     text-wrap: pretty;
+    user-select: text;
 }

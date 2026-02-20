@@ -1,3 +1,13 @@
+#homeWrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    background-color: var(--background);
+    z-index: 2;
+}
+
+
 .mainContent {
     position: relative;
     display: flex;
@@ -5,6 +15,7 @@
     width: 65vw;
     height: 100vh;
     margin: auto;
+    z-index: 2;
 }
 
 

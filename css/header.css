@@ -35,11 +35,24 @@ body::before {
     backdrop-filter: blur(0px);
     transition: backdrop-filter 0.5s ease-in-out;
     pointer-events: none;
-    z-index: 1;
+    z-index: 995;
 }
 
 body.blur-background::before {
     backdrop-filter: blur(4px);
+}
+
+/* site header */
+.siteHeader {
+    background-color: var(--background);
+    height: auto;
+    width: 100vh;
+    z-index: 999;
+}
+
+header {
+    background-color: var(--background);
+    width: 100vw;
 }
 
 /* side nav */
