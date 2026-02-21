@@ -44,24 +44,19 @@ body.blur-background::before {
 
 /* site header */
 .siteHeader {
-    background-color: var(--background);
-    height: auto;
-    width: 100vh;
+    display: flex;
+    height: 0;
+    width: auto;
     z-index: 999;
 }
 
-header {
-    background-color: var(--background);
-    width: 100vw;
-}
 
 /* side nav */
 
 .navWrapper {
-    width: auto;
+    width: 100vw;
     display: flex;
     padding: var(--s_padding);
-    z-index: 999;
 }
 
 .sideNav {
