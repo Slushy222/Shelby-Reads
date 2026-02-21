@@ -47,7 +47,6 @@ body.blur-background::before {
     display: flex;
     height: 0;
     width: auto;
-    z-index: 999;
 }
 
 
@@ -67,7 +66,7 @@ body.blur-background::before {
     flex-direction: column;
     justify-content: space-between;
     height: 90vh;
-    z-index: 999;
+    z-index: 997;
     mix-blend-mode: difference;
 }
 
@@ -101,7 +100,8 @@ body.blur-background::before {
 }
 
 #leftArrowIcon {
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
+    margin-right: 1.5em;
 }
 
 #bookIcon {
@@ -134,17 +134,57 @@ body.blur-background::before {
     cursor: pointer;
 }
 
+.buttonWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    align-items: center;
+}
+
+.bookData {
+    font-style: normal;
+    color: var(--white);
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 400;
+    font-size: var(--ui_type);
+}
+
 .bookButton {
     position: relative;
     background-color: var(--grey);
     width: 16px;
     height: 2px;
     cursor: pointer;
-    margin-top: 1.3em;
-    transition: fill 0s linear;
+    margin-right: 1.5em;
+    transition: all 0.4s ease-out;
+}
+
+.active {
+    background-color: var(--white);
+}
+
+.bookButton::before, .bookButton::after {
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 64px;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.bookButton::before {
+    top: 100%;
+}
+
+.bookButton::after {
+    bottom: 100%;
 }
 
 .bookButton:hover {
     background-color: var(--white);
-    transition: background-color 0.3s ease-in;
+    width: 64px;
+    transition: background-color 0.2s ease-out;
 }

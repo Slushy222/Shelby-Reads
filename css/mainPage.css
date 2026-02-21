@@ -69,6 +69,7 @@
     flex-direction: row;
     align-items: center;
     padding-left: var(--s_padding);
+    position: relative;
 }
 
 .spine::before, .spine::after {
