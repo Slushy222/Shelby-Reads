@@ -231,7 +231,11 @@ body.blur-background::before {
 
 
 @media screen and (max-width: 80em) {
-    .sideNav {
+    .bookSelector, .icon #personIcon {
         display: none;
+    }
+
+    .sideNav {
+        position: relative;
     }
 }
