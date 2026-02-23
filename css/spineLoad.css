@@ -11,6 +11,6 @@
 
 
 .spine {
-    animation-delay: calc(500ms * var(--i));
-    animation: spineLoad 1.3s;
+  animation: spineLoad 1.3s both;
+  animation-delay: calc(225ms * var(--i));
 }
