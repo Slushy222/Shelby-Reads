@@ -82,3 +82,10 @@
     color: var(--grey);
     transition: color 0s linear;
 }
+
+
+@media screen and (max-width: 80em) {
+    #aboutWrapper {
+        flex-direction: column;
+    }
+}

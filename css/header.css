@@ -228,3 +228,10 @@ body.blur-background::before {
 .buttonWrapper:has(.bookButton.next2) .bookButton {
     width: 32px;
 }
+
+
+@media screen and (max-width: 80em) {
+    .sideNav {
+        display: none;
+    }
+}
