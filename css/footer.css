@@ -20,19 +20,37 @@
     margin: auto;
 }
 
+#aboutContent {
+    height: auto;
+    width: auto;
+}
+
 
 /* img styles */
 #shelbyImg {
-    width: 110vw;
-    height: 40vh;
+    width: 400em;
+    height: 50em;
     background-color: var(--black);
     margin-right: var(--s_padding);
 }
 
+#shelbyImg img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 16;
+    object-fit: cover;
+    user-select: none;
+    object-position: center 40%
+}
+
 /* type styles */
-#aboutpara {
+#aboutPara {
     width: auto;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 .aboutType {
@@ -45,4 +63,22 @@
     margin-bottom: var(--paraSpacing);
     text-wrap: pretty;
     user-select: text;
+}
+
+#attribution {
+    color: var(--black);
+}
+
+#attribution a, #attribution a:link, #attribution a:visited {
+    text-decoration: none;
+    color: var(--black);
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s ease-out;
+
+}
+
+#attribution a:hover {
+    color: var(--grey);
+    transition: color 0s linear;
 }
