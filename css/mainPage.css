@@ -15,6 +15,7 @@
     flex-direction: column;
     width: 65vw;
     height: auto;
+    min-height: 100vh;
     margin: auto;
     z-index: 2;
     padding-top: 20vh;
