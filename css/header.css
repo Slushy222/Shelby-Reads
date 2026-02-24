@@ -238,4 +238,8 @@ body.blur-background::before {
     .sideNav {
         position: relative;
     }
+
+    .navType {
+        padding-top: 3px;
+    }
 }
