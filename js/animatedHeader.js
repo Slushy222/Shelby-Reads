@@ -112,3 +112,9 @@ function initAnimatedText() {
             }
             
             document.addEventListener('DOMContentLoaded', initAnimatedText);
+
+            window.onload = () => {
+                if (new URLSearchParams(window.location.search).get("scrollBottom")) {
+                    setTimeout(() => window.scrollTo(0, document.body.scrollHeight), 100);
+                }
+            };

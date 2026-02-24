@@ -22,3 +22,11 @@
     --large_para: 3rem;
     --small_para: 1.5rem
 }
+
+@media screen and (max-width: 80em) {
+    :root {
+        --large_para: 2.5rem;
+        --small_para: 1.25rem;
+        --ui_type: 1.25rem;
+    }
+}

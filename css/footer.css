@@ -87,5 +87,20 @@
 @media screen and (max-width: 80em) {
     #aboutWrapper {
         flex-direction: column;
+        width: 90vw;
     }
+
+    #shelbyImg {
+        width: 100%;
+        height: 30em;
+        margin-bottom: 3em;
+    }
+
+    /* #aboutPara {
+        padding-bottom: var(--s_padding);
+    } */
+
+    /* #aboutShelby {
+        height: 100vh;
+    } */
 }
