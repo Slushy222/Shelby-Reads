@@ -83,6 +83,36 @@
     transition: color 0s linear;
 }
 
+/* socials */
+
+#socials {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+}
+
+#socials .icon {
+    width: 22px;
+    transition: all 0.4s ease-out;
+    fill: var(--black);
+    margin-right: 1em;
+}
+
+#socials .icon:hover {
+    fill: var(--grey);
+    transition: color 0s linear;
+}
+
+#taylor {
+    position: absolute;
+    display: flex;
+    top: 95vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 
 @media screen and (max-width: 80em) {
     #aboutWrapper {
