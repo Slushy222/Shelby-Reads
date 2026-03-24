@@ -20,7 +20,10 @@
     /* type below */
     --ui_type: 1.5rem;
     --large_para: 3rem;
-    --small_para: 1.5rem
+    --small_para: 1.5rem;
+    --masthead: 15em;
+    --copy: 1.75em;
+    --metaDataSpacing: 3em;
 }
 
 @media screen and (max-width: 80em) {
@@ -28,5 +31,8 @@
         --large_para: 2.5rem;
         --small_para: 1.25rem;
         --ui_type: 1.25rem;
+        --masthead: 5em;
+        --copy: 1.5em;
+        --metaDataSpacing: 1.25em;
     }
 }

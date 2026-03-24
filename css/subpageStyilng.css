@@ -5,6 +5,61 @@ body {
 }
 
 /* subpage styling */
+.subpageWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    height: auto;
+    min-height: 100vh;
+    margin: auto;
+    z-index: 2;
+    padding-top: 20vh;
+}
 
+.subpageWrapper p {
+    font-style: normal;
+    color: var(--black);
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 400;
+    font-size: var(--ui_type);
+    pointer-events: none;
+    width: auto;
+}
 
+.bookMetaData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: var(--s_padding);
+}
 
+.bookInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.bookInfo p {
+ margin-right: var(--metaDataSpacing);
+}
+
+.bookTitle h1 {
+    font-style: normal;
+    color: var(--black);
+    font-family: 'loretta', serif;
+    font-weight: 300;
+    font-size: var(--masthead);
+    pointer-events: none;
+    margin-bottom: 2rem
+}
+
+.blogCopy p {
+    font-style: normal;
+    color: var(--black);
+    font-family: 'loretta', serif;
+    font-weight: 300;
+    font-size: var(--copy);
+    line-height: 150%;
+    pointer-events: none;
+    width: auto;
+}
