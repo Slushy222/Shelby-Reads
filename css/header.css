@@ -78,6 +78,11 @@ body.blur-background::before {
     height: auto;
     padding-left: 40px;
     z-index: 998;
+    pointer-events: none; 
+}
+
+.navType a {
+    pointer-events: auto;
 }
 
 
